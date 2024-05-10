@@ -8,6 +8,10 @@ public class VerificadorMedia {
 
        double media = 0.0;
 
+       // Pergunta qual a nota minima
+       System.out.println("Qual a nota minima?");
+       float nota = input.nextFloat();
+
        /* Registra todas as notas */
        System.out.print("Coloque a nota da AC1: ");
        float AC1 = input.nextFloat();
@@ -24,12 +28,14 @@ public class VerificadorMedia {
        /* Soma todas as notas e as mutiplica pelo peso certo */
        media = (AC1 * 0.15) + (AC2 * 0.30) + (AG * 0.10) + (AF * 0.45);
 
-        if (media <= 5) {
+        if (media == nota) {
+            System.out.println("Sua nota está na Média!");
+        }else if (media < nota) {
             System.out.println("Sua nota está abaixo da Média!");
         } else {
             System.out.println("Sua nota está a cima da Média!");
         }
-       System.out.println("Sua média final é: " + media);
+        System.out.printf("Sua média final é: %.2f %n ", + media);
        input.close();
     }
 }
