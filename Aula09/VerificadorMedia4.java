@@ -26,8 +26,6 @@ public class VerificadorMedia4 {
         // Solicita o número de notas a serem verificadas
         System.out.print("Quantas notas serão inseridas? ");
         int numNotas = input.nextInt();
-
-
  
         for (int j = 0; j <numAlunos; j++) {
             // Pergunta o nome do aluno avaliado e regitra ele
@@ -52,8 +50,6 @@ public class VerificadorMedia4 {
 
                 somaNotas += nota * peso;
                 somaPesos += peso;
-
-                
           
             }
             
@@ -87,7 +83,6 @@ public class VerificadorMedia4 {
                 System.out.println("Aprovado!");
                 System.out.printf("Sua média final é: %.2f %n ", + media);
             }
-        
 
         }       
        

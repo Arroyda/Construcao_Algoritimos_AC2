@@ -35,7 +35,7 @@ public class VerificadorMedia3 {
         }
         
         //Verificação se ultrapassou o limite de peso = 1
-        if (somaPesos < 1) {
+        if (somaPesos <= 1) {
             // Calcula a média
             media = somaNotas;
 
