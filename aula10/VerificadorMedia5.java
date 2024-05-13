@@ -54,6 +54,7 @@ public class VerificadorMedia5 {
     
                     if (resposta == 2){
                         continuar = false;
+                        break;
                     } 
               
                 }
