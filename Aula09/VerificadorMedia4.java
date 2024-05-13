@@ -2,10 +2,8 @@ package aula09;
 
 import java.util.Scanner;
 
-
 public class VerificadorMedia4 {
-    private static final char nomeAvaliacao1 = 0;
-
+    
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
        
