@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class VerificadorMedia4 {
@@ -8,12 +7,6 @@ public class VerificadorMedia4 {
         Scanner input = new Scanner(System.in);
        
         double media = 0.0, somaNotas = 0.0, somaPesos = 0.0;
-
-        // Cria listas para armazenar as informações
-        ArrayList<String> listaNomeAluno = new ArrayList<>();
-        ArrayList<String> listaNomeAvaliacoes = new ArrayList<>();
-        ArrayList<Float> listaNotas = new ArrayList<>();
-        ArrayList<Float> listaPesos = new ArrayList<>();
 
         // Pergunta quantos alunos será verificado e joga dentro do FOR
         System.out.println("Quantos alunos serão avaliados?");
@@ -31,8 +24,6 @@ public class VerificadorMedia4 {
             // Pergunta o nome do aluno avaliado e regitra ele
             System.out.println("Nome do Aluno");
             String nomeAluno = input.next();
-
-            listaNomeAluno.add(nomeAluno);
             
             // Registra as notas e pesos
             for (int i = 0; i < numNotas; i++) {
@@ -44,10 +35,7 @@ public class VerificadorMedia4 {
  
                 System.out.printf("Peso %d: ", i + 1);
                 float peso = input.nextFloat();
-
-                listaNotas.add(nota);
-                listaPesos.add(peso);
-
+        
                 somaNotas += nota * peso;
                 somaPesos += peso;
           
@@ -85,7 +73,6 @@ public class VerificadorMedia4 {
             }
 
         }       
-       
        input.close();
     }
 }
