@@ -89,8 +89,7 @@ public class VerificadorMedia5 {
                     }
         
                 }       
-            }
-            
+            } 
             
         }
        input.close();
